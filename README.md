@@ -1,6 +1,6 @@
 # iOS照片清理功能，包括相似照片清理、截屏照片清理、图片压缩
 
-![照片清理动画.gif](https://upload-images.jianshu.io/upload_images/2120486-a52f93bb928d98de.gif?imageMogr2/auto-orient/strip)
+![照片清理动画.gif](https://upload-images.jianshu.io/upload_images/2120486-ceae19bb2abb134b.gif?imageMogr2/auto-orient/strip)
 
 ###一、获取照片
 
