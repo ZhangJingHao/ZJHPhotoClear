@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A881B85206C86350017CB64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881B84206C86350017CB64 /* AppDelegate.m */; };
+		2A881B88206C86350017CB64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881B87206C86350017CB64 /* ViewController.m */; };
+		2A881B8D206C86350017CB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A881B8C206C86350017CB64 /* Assets.xcassets */; };
+		2A881B90206C86350017CB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A881B8E206C86350017CB64 /* LaunchScreen.storyboard */; };
+		2A881B93206C86350017CB64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881B92206C86350017CB64 /* main.m */; };
+		2A881B9B206C868E0017CB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A881B99206C868E0017CB64 /* Main.storyboard */; };
+		2A881BF0206C89020017CB64 /* WKClearPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BD1206C89020017CB64 /* WKClearPhotoViewController.m */; };
+		2A881BF1206C89020017CB64 /* WKSimilarPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BD3206C89020017CB64 /* WKSimilarPhotoViewController.m */; };
+		2A881BF2206C89020017CB64 /* WKThinPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BD5206C89020017CB64 /* WKThinPhotoViewController.m */; };
+		2A881BF3206C89020017CB64 /* WKClearPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BD7206C89020017CB64 /* WKClearPhotoManager.m */; };
+		2A881BF4206C89020017CB64 /* GetSimilarity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BD9206C89020017CB64 /* GetSimilarity.m */; };
+		2A881BF5206C89020017CB64 /* ImageCompare.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BDB206C89020017CB64 /* ImageCompare.mm */; };
+		2A881BF6206C89020017CB64 /* WKCompressImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BDC206C89020017CB64 /* WKCompressImageTool.m */; };
+		2A881BF7206C89020017CB64 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A881BDE206C89020017CB64 /* opencv2.framework */; };
+		2A881BF8206C89020017CB64 /* WKClearPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BE1206C89020017CB64 /* WKClearPhotoItem.m */; };
+		2A881BF9206C89020017CB64 /* WKPhotoInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BE2206C89020017CB64 /* WKPhotoInfoItem.m */; };
+		2A881BFA206C89020017CB64 /* WKClearPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BE6206C89020017CB64 /* WKClearPhotoCell.m */; };
+		2A881BFB206C89020017CB64 /* WKSimilarPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BE7206C89020017CB64 /* WKSimilarPhotoCell.m */; };
+		2A881BFC206C89020017CB64 /* WKSimilarPhotoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BE8206C89020017CB64 /* WKSimilarPhotoHeadView.m */; };
+		2A881BFD206C89020017CB64 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A881BEE206C89020017CB64 /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A881B80206C86350017CB64 /* ZJHPhotoClear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJHPhotoClear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A881B83206C86350017CB64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A881B84206C86350017CB64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A881B86206C86350017CB64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A881B87206C86350017CB64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A881B8C206C86350017CB64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A881B8F206C86350017CB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A881B91206C86350017CB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A881B92206C86350017CB64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A881B9A206C868E0017CB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A881BD0206C89020017CB64 /* WKSimilarPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSimilarPhotoViewController.h; sourceTree = "<group>"; };
+		2A881BD1206C89020017CB64 /* WKClearPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKClearPhotoViewController.m; sourceTree = "<group>"; };
+		2A881BD2206C89020017CB64 /* WKThinPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKThinPhotoViewController.h; sourceTree = "<group>"; };
+		2A881BD3206C89020017CB64 /* WKSimilarPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSimilarPhotoViewController.m; sourceTree = "<group>"; };
+		2A881BD4206C89020017CB64 /* WKClearPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearPhotoViewController.h; sourceTree = "<group>"; };
+		2A881BD5206C89020017CB64 /* WKThinPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKThinPhotoViewController.m; sourceTree = "<group>"; };
+		2A881BD7206C89020017CB64 /* WKClearPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKClearPhotoManager.m; sourceTree = "<group>"; };
+		2A881BD8206C89020017CB64 /* WKCompressImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCompressImageTool.h; sourceTree = "<group>"; };
+		2A881BD9206C89020017CB64 /* GetSimilarity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSimilarity.m; sourceTree = "<group>"; };
+		2A881BDA206C89020017CB64 /* ImageCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompare.h; sourceTree = "<group>"; };
+		2A881BDB206C89020017CB64 /* ImageCompare.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageCompare.mm; sourceTree = "<group>"; };
+		2A881BDC206C89020017CB64 /* WKCompressImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCompressImageTool.m; sourceTree = "<group>"; };
+		2A881BDD206C89020017CB64 /* WKClearPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearPhotoManager.h; sourceTree = "<group>"; };
+		2A881BDE206C89020017CB64 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2A881BDF206C89020017CB64 /* GetSimilarity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSimilarity.h; sourceTree = "<group>"; };
+		2A881BE1206C89020017CB64 /* WKClearPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKClearPhotoItem.m; sourceTree = "<group>"; };
+		2A881BE2206C89020017CB64 /* WKPhotoInfoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPhotoInfoItem.m; sourceTree = "<group>"; };
+		2A881BE3206C89020017CB64 /* WKClearPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearPhotoItem.h; sourceTree = "<group>"; };
+		2A881BE4206C89020017CB64 /* WKPhotoInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPhotoInfoItem.h; sourceTree = "<group>"; };
+		2A881BE6206C89020017CB64 /* WKClearPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKClearPhotoCell.m; sourceTree = "<group>"; };
+		2A881BE7206C89020017CB64 /* WKSimilarPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSimilarPhotoCell.m; sourceTree = "<group>"; };
+		2A881BE8206C89020017CB64 /* WKSimilarPhotoHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSimilarPhotoHeadView.m; sourceTree = "<group>"; };
+		2A881BE9206C89020017CB64 /* WKClearPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearPhotoCell.h; sourceTree = "<group>"; };
+		2A881BEA206C89020017CB64 /* WKSimilarPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSimilarPhotoCell.h; sourceTree = "<group>"; };
+		2A881BEB206C89020017CB64 /* WKSimilarPhotoHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSimilarPhotoHeadView.h; sourceTree = "<group>"; };
+		2A881BEE206C89020017CB64 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2A881BEF206C89020017CB64 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A881B7D206C86350017CB64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A881BF7206C89020017CB64 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A881B77206C86340017CB64 = {
+			isa = PBXGroup;
+			children = (
+				2A881B82206C86350017CB64 /* ZJHPhotoClear */,
+				2A881B81206C86350017CB64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A881B81206C86350017CB64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A881B80206C86350017CB64 /* ZJHPhotoClear.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A881B82206C86350017CB64 /* ZJHPhotoClear */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BCE206C89020017CB64 /* ClearPhoto */,
+				2A881BEC206C89020017CB64 /* ThirdSDK */,
+				2A881B83206C86350017CB64 /* AppDelegate.h */,
+				2A881B84206C86350017CB64 /* AppDelegate.m */,
+				2A881B86206C86350017CB64 /* ViewController.h */,
+				2A881B87206C86350017CB64 /* ViewController.m */,
+				2A881B99206C868E0017CB64 /* Main.storyboard */,
+				2A881B8C206C86350017CB64 /* Assets.xcassets */,
+				2A881B8E206C86350017CB64 /* LaunchScreen.storyboard */,
+				2A881B91206C86350017CB64 /* Info.plist */,
+				2A881B92206C86350017CB64 /* main.m */,
+			);
+			path = ZJHPhotoClear;
+			sourceTree = "<group>";
+		};
+		2A881BCE206C89020017CB64 /* ClearPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BCF206C89020017CB64 /* Controller */,
+				2A881BD6206C89020017CB64 /* Manager */,
+				2A881BE0206C89020017CB64 /* Model */,
+				2A881BE5206C89020017CB64 /* View */,
+			);
+			path = ClearPhoto;
+			sourceTree = "<group>";
+		};
+		2A881BCF206C89020017CB64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BD4206C89020017CB64 /* WKClearPhotoViewController.h */,
+				2A881BD1206C89020017CB64 /* WKClearPhotoViewController.m */,
+				2A881BD0206C89020017CB64 /* WKSimilarPhotoViewController.h */,
+				2A881BD3206C89020017CB64 /* WKSimilarPhotoViewController.m */,
+				2A881BD2206C89020017CB64 /* WKThinPhotoViewController.h */,
+				2A881BD5206C89020017CB64 /* WKThinPhotoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A881BD6206C89020017CB64 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BDD206C89020017CB64 /* WKClearPhotoManager.h */,
+				2A881BD7206C89020017CB64 /* WKClearPhotoManager.m */,
+				2A881BD8206C89020017CB64 /* WKCompressImageTool.h */,
+				2A881BDC206C89020017CB64 /* WKCompressImageTool.m */,
+				2A881BDA206C89020017CB64 /* ImageCompare.h */,
+				2A881BDB206C89020017CB64 /* ImageCompare.mm */,
+				2A881BDF206C89020017CB64 /* GetSimilarity.h */,
+				2A881BD9206C89020017CB64 /* GetSimilarity.m */,
+				2A881BDE206C89020017CB64 /* opencv2.framework */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2A881BE0206C89020017CB64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BE3206C89020017CB64 /* WKClearPhotoItem.h */,
+				2A881BE1206C89020017CB64 /* WKClearPhotoItem.m */,
+				2A881BE4206C89020017CB64 /* WKPhotoInfoItem.h */,
+				2A881BE2206C89020017CB64 /* WKPhotoInfoItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A881BE5206C89020017CB64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BE9206C89020017CB64 /* WKClearPhotoCell.h */,
+				2A881BE6206C89020017CB64 /* WKClearPhotoCell.m */,
+				2A881BEA206C89020017CB64 /* WKSimilarPhotoCell.h */,
+				2A881BE7206C89020017CB64 /* WKSimilarPhotoCell.m */,
+				2A881BEB206C89020017CB64 /* WKSimilarPhotoHeadView.h */,
+				2A881BE8206C89020017CB64 /* WKSimilarPhotoHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A881BEC206C89020017CB64 /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BED206C89020017CB64 /* MBProgressHUD */,
+			);
+			path = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		2A881BED206C89020017CB64 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2A881BEE206C89020017CB64 /* MBProgressHUD.m */,
+				2A881BEF206C89020017CB64 /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A881B7F206C86350017CB64 /* ZJHPhotoClear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A881B96206C86350017CB64 /* Build configuration list for PBXNativeTarget "ZJHPhotoClear" */;
+			buildPhases = (
+				2A881B7C206C86350017CB64 /* Sources */,
+				2A881B7D206C86350017CB64 /* Frameworks */,
+				2A881B7E206C86350017CB64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZJHPhotoClear;
+			productName = ZJHPhotoClear;
+			productReference = 2A881B80206C86350017CB64 /* ZJHPhotoClear.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A881B78206C86350017CB64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ZhangJingHao2345;
+				TargetAttributes = {
+					2A881B7F206C86350017CB64 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2A881B7B206C86350017CB64 /* Build configuration list for PBXProject "ZJHPhotoClear" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A881B77206C86340017CB64;
+			productRefGroup = 2A881B81206C86350017CB64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A881B7F206C86350017CB64 /* ZJHPhotoClear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A881B7E206C86350017CB64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A881B9B206C868E0017CB64 /* Main.storyboard in Resources */,
+				2A881B90206C86350017CB64 /* LaunchScreen.storyboard in Resources */,
+				2A881B8D206C86350017CB64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A881B7C206C86350017CB64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A881BFA206C89020017CB64 /* WKClearPhotoCell.m in Sources */,
+				2A881B88206C86350017CB64 /* ViewController.m in Sources */,
+				2A881BF4206C89020017CB64 /* GetSimilarity.m in Sources */,
+				2A881BF3206C89020017CB64 /* WKClearPhotoManager.m in Sources */,
+				2A881BF0206C89020017CB64 /* WKClearPhotoViewController.m in Sources */,
+				2A881BF2206C89020017CB64 /* WKThinPhotoViewController.m in Sources */,
+				2A881BF6206C89020017CB64 /* WKCompressImageTool.m in Sources */,
+				2A881B93206C86350017CB64 /* main.m in Sources */,
+				2A881BF9206C89020017CB64 /* WKPhotoInfoItem.m in Sources */,
+				2A881BF1206C89020017CB64 /* WKSimilarPhotoViewController.m in Sources */,
+				2A881BF8206C89020017CB64 /* WKClearPhotoItem.m in Sources */,
+				2A881BF5206C89020017CB64 /* ImageCompare.mm in Sources */,
+				2A881BFC206C89020017CB64 /* WKSimilarPhotoHeadView.m in Sources */,
+				2A881BFB206C89020017CB64 /* WKSimilarPhotoCell.m in Sources */,
+				2A881B85206C86350017CB64 /* AppDelegate.m in Sources */,
+				2A881BFD206C89020017CB64 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A881B8E206C86350017CB64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A881B8F206C86350017CB64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2A881B99206C868E0017CB64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A881B9A206C868E0017CB64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A881B94206C86350017CB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A881B95206C86350017CB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A881B97206C86350017CB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJHPhotoClear/ClearPhoto/Manager",
+				);
+				INFOPLIST_FILE = ZJHPhotoClear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.etouch.ecalendar.ZJHPhotoClear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A881B98206C86350017CB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJHPhotoClear/ClearPhoto/Manager",
+				);
+				INFOPLIST_FILE = ZJHPhotoClear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.etouch.ecalendar.ZJHPhotoClear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A881B7B206C86350017CB64 /* Build configuration list for PBXProject "ZJHPhotoClear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A881B94206C86350017CB64 /* Debug */,
+				2A881B95206C86350017CB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A881B96206C86350017CB64 /* Build configuration list for PBXNativeTarget "ZJHPhotoClear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A881B97206C86350017CB64 /* Debug */,
+				2A881B98206C86350017CB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A881B78206C86350017CB64 /* Project object */;
+}

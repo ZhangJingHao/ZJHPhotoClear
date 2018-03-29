@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UHm-as-7FR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="w2k-1O-hjs">
+            <objects>
+                <navigationController id="UHm-as-7FR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ohK-C1-hZM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="z4U-T2-4ip" kind="relationship" relationship="rootViewController" id="EXZ-EW-SC2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyI-kA-dbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="92"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="rS4-hd-x4U">
+            <objects>
+                <viewController title="首页" id="z4U-T2-4ip" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOB-Ug-uuS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-Hh-dWt">
+                                <rect key="frame" x="121" y="310" width="133" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="IrA-BG-1xR"/>
+                                    <constraint firstAttribute="width" constant="133" id="PaK-GQ-Glm"/>
+                                </constraints>
+                                <state key="normal" title="照片清理"/>
+                                <connections>
+                                    <action selector="clickClearPhoto" destination="z4U-T2-4ip" eventType="touchUpInside" id="le3-Op-cuO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8aZ-Hh-dWt" firstAttribute="centerY" secondItem="gOB-Ug-uuS" secondAttribute="centerY" id="5WD-1Z-xXz"/>
+                            <constraint firstItem="8aZ-Hh-dWt" firstAttribute="centerX" secondItem="gOB-Ug-uuS" secondAttribute="centerX" id="ZZX-3X-RnX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lzM-2x-L2k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="CU5-9L-MeH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3I4-A9-T5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.39999999999998" y="90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>
